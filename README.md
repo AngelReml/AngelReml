@@ -11,7 +11,7 @@ Lo que hay aquí abajo arranca, tiene pruebas y se puede leer. No hay demos.
 | Proyecto | Qué es | Verificable |
 |---|---|---|
 | **[Shinobi](https://github.com/AngelReml/Shinobibot)** | Agente autónomo Windows-nativo. Recibe una orden en lenguaje natural y la ejecuta sobre la máquina real: ficheros, shell, Chrome por CDP, sub-agentes en paralelo. Cada llamada queda en un log append-only. | CI en verde sobre Windows y Linux |
-| **[Kaizen](https://github.com/AngelReml/Kaizen)** | Departamento comercial B2B automatizado: busca candidatos, los cualifica contra un ICP, redacta el primer contacto y hace seguimiento. Multi-tenant, sin datos de cliente en el repositorio. | 1344 tests en verde |
+| **[Kaizen](https://github.com/AngelReml/Kaizen)** | Departamento comercial B2B automatizado: busca candidatos, los cualifica contra un ICP, redacta el primer contacto y hace seguimiento. Multi-tenant, sin datos de cliente en el repositorio. | 1343 tests pasan; 8 opcionales se omiten sin servicios externos |
 | **[Don Pepe](https://github.com/AngelReml/donpepe)** | Restaurante real, en producción. El dueño dice *"sube el pulpo a 20"* por Telegram y el precio cambia en la carta en menos de 30 segundos. | Cliente real, desplegado |
 | **[Swarm IDE](https://github.com/AngelReml/swarm-ide)** | IDE multi-agente local-first: planifica, edita varios ficheros de forma atómica, corre los tests y hace commit. 24 modelos en 8 proveedores con fallback automático. | Arranca con un clic en Windows |
 | **[PredAItor](https://github.com/AngelReml/Predaitor)** | Motor de descubrimiento: rastrea GitHub y HuggingFace buscando sistemas agénticos, extrae sus capacidades técnicas y exporta perfiles estructurados. | Dataset exportable |
