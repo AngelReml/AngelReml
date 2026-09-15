@@ -1,6 +1,6 @@
 ## Iván Carbonell
 
-Diseño y opero **sistemas multi-agente que están en producción**. No escribo el código a mano: defino la arquitectura y los contratos, dirijo a los agentes que lo escriben y verifico línea a línea lo que devuelven. Quince años de zapatería artesanal antes de esto; la costumbre de mirar la pieza antes de entregarla se quedó.
+Diseño y opero **sistemas multi-agente que están en producción**. No escribo código a mano ni vendo una identidad de programador tradicional: mi trabajo es convertir objetivos ambiguos en prompts, contratos, guardarraíles, pruebas y criterios de aceptación que permiten a agentes de IA construir, ejecutar y corregir sistemas reales bajo supervisión.
 
 Lo que hay aquí abajo arranca, tiene pruebas y se puede leer. No hay demos.
 
