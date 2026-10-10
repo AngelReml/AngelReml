@@ -1,0 +1,21 @@
+OK    sin scroll horizontal a 360px :: scrollWidth=360
+OK    peticiones externas a 360px :: 9 peticiones, externas=[]
+OK    sin errores CSP/JS a 360px :: []
+OK    fuentes desde /fonts a 360px :: pedidas=["/fonts/figtree.woff2","/fonts/pinyon-script.woff2","/fonts/young-serif.woff2"] cargadas=["Figtree","Young Serif","Pinyon Script"]
+OK    cookies a 360px :: context.cookies()=[] document.cookie=""
+OK    almacenamiento local a 360px :: localStorage+sessionStorage=0
+INFO  botón sin número: true | [FALTA DATO: número de WhatsApp]
+OK    rechaza <script> :: tecleado "<script>alert(1)</script>" -> valor "scriptalert(1)/scrip"
+OK    bloquea el carácter 21 :: tecleado 21 -> "ABCDEFGHIJKLMNOPQRST" (20), contador 20/20
+OK    quita caracteres de control :: "Ana María"
+OK    lazo se actualiza :: "Lucía"
+INFO  [FALTA DATO] visibles en index: ["[FALTA DATO: precio]","[FALTA DATO: días que tardas en hacer un oso]","[FALTA DATO: número de WhatsApp]","[FALTA DATO: cuánto aguanta el color]","[FALTA DATO: nombre de la marca]","[FALTA DATO: nombre y apellidos de la titular]","[FALTA DATO: email de contacto]"]
+OK    sin scroll horizontal a 1280px :: scrollWidth=1280
+OK    peticiones externas a 1280px :: 9 peticiones, externas=[]
+OK    sin errores CSP/JS a 1280px :: []
+OK    fuentes desde /fonts a 1280px :: pedidas=["/fonts/figtree.woff2","/fonts/pinyon-script.woff2","/fonts/young-serif.woff2"] cargadas=["Figtree","Young Serif","Pinyon Script"]
+OK    cookies a 1280px :: context.cookies()=[] document.cookie=""
+OK    almacenamiento local a 1280px :: localStorage+sessionStorage=0
+OK    aviso-legal.html 360px sin externas :: scrollWidth=360, falta=["[FALTA DATO: nombre y apellidos de la titular]","[FALTA DATO: NIF]","[FALTA DATO: domicilio]","[FALTA DATO: email de contacto]"]
+OK    privacidad.html 360px sin externas :: scrollWidth=360, falta=["[FALTA DATO: nombre y apellidos de la titular]","[FALTA DATO: NIF]","[FALTA DATO: email de contacto]"]
+OK    condiciones.html 360px sin externas :: scrollWidth=360, falta=["[FALTA DATO: precio]","[FALTA DATO: email de contacto]","[FALTA DATO: qué pasa si la entrega llega tarde]"]
