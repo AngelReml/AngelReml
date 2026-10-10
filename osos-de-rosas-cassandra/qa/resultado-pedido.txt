@@ -1,0 +1,9 @@
+Envío vacío -> ["err-color=Elige un color.","err-nombre=Escribe el nombre o la frase del lazo.","err-fecha=Elige el día que lo quieres."] | navegó: false
+Fecha pasada (2026-10-09) -> ["err-fecha=Elige el 10/10/2026 o más tarde."] | navegó: false
+URL generada: https://wa.me/34600000000?text=Hola%20Cassandra%2C%20quiero%20un%20oso%20de%20rosas.%0AColor%3A%20Rosa%0ANombre%20en%20el%20lazo%3A%20Luc%C3%ADa%0AFecha%20de%20entrega%3A%2017%2F10%2F2026%0AVengo%20de%3A%20Estados%20de%20WhatsApp
+Texto decodificado:
+Hola Cassandra, quiero un oso de rosas.
+Color: Rosa
+Nombre en el lazo: Lucía
+Fecha de entrega: 17/10/2026
+Vengo de: Estados de WhatsApp

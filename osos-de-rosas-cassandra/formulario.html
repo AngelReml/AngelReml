@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oso de rosas con su nombre</title>
+  <meta name="description" content="Oso de rosas hecho a mano con el nombre que tú elijas en el lazo. Pídelo por WhatsApp.">
+  <meta name="referrer" content="no-referrer">
+  <link rel="preload" href="fonts/figtree.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/pinyon-script.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="pagina">
+    <img class="foto" src="img/foto-pendiente.svg" width="800" height="1000" alt="Foto real del oso de rosas (pendiente)">
+
+    <h1>Oso de rosas con su nombre</h1>
+    <p class="subtitulo">Hecho a mano, rosa a rosa, con el nombre que tú elijas en el lazo. Llega el día que marcas.</p>
+    <p class="precio"><span data-cfg="PRICE_EUR">[FALTA DATO: precio]</span> € con entrega en mano en <span data-cfg="DELIVERY_ZONE_TEXT">Padrón y alrededores</span>.</p>
+
+    <form id="pedido" class="pedido" novalidate>
+      <fieldset class="campo">
+        <legend>Color</legend>
+        <div id="colores" class="colores"></div>
+        <p id="err-color" class="error" hidden></p>
+      </fieldset>
+
+      <div class="campo">
+        <label for="nombre">Nombre o frase en el lazo</label>
+        <input id="nombre" name="nombre" type="text" maxlength="20" autocomplete="off" spellcheck="false" data-field="nombre" aria-describedby="contador err-nombre">
+        <p id="contador" class="contador" aria-live="polite">0/20</p>
+        <p id="err-nombre" class="error" hidden></p>
+      </div>
+
+      <div class="campo">
+        <label for="fecha">¿Qué día lo quieres?</label>
+        <input id="fecha" name="fecha" type="date" data-field="fecha" aria-describedby="fecha-nota err-fecha">
+        <p id="fecha-nota" class="nota falta" hidden>[FALTA DATO: días que tardas en hacer un oso]</p>
+        <p id="err-fecha" class="error" hidden></p>
+      </div>
+
+      <figure class="vista">
+        <svg viewBox="0 0 340 260" role="img" aria-labelledby="vista-titulo">
+          <title id="vista-titulo">Vista previa del lazo con tu texto</title>
+          <defs>
+            <path id="lazo-curva-texto" d="M30 169 Q170 209 310 169"/>
+          </defs>
+          <g id="oso-color" fill="#D5DAD2" stroke="#24322B" stroke-opacity="0.25" stroke-width="1.5">
+            <circle cx="105" cy="60" r="32"/>
+            <circle cx="235" cy="60" r="32"/>
+            <ellipse cx="170" cy="250" rx="112" ry="78"/>
+            <circle cx="170" cy="112" r="74"/>
+          </g>
+          <path d="M10 140 Q170 186 330 140 L330 194 Q170 240 10 194 Z" fill="#000000"/>
+          <text id="lazo-texto" class="lazo-texto" font-size="42" text-anchor="middle" dominant-baseline="central"><textPath href="#lazo-curva-texto" startOffset="50%">Su nombre</textPath></text>
+        </svg>
+        <figcaption>Vista previa aproximada.</figcaption>
+      </figure>
+
+      <button id="pedir" class="boton" type="submit">Pedir mi oso</button>
+      <p class="bajo-boton">Al pulsar se abre WhatsApp con tu pedido ya escrito. Lo confirmo contigo antes de empezar. Tardo <span data-cfg="LEAD_DAYS">[FALTA DATO: días que tardas en hacer un oso]</span> días en hacerlo. Si tu fecha no da tiempo, te lo digo antes. Se paga al entregar.</p>
+    </form>
+
+    <section class="seccion" aria-labelledby="asi">
+      <h2 id="asi">Así se hace</h2>
+      <img class="video" src="img/video-pendiente.svg" width="540" height="960" alt="Vídeo real del proceso (pendiente)">
+      <p>Cada oso lleva cientos de rosas pegadas una a una sobre una base. Aquí lo ves, sin cortes.</p>
+    </section>
+
+    <section class="seccion" aria-labelledby="preguntas">
+      <h2 id="preguntas">Lo que nos preguntan</h2>
+      <details>
+        <summary>¿Por qué cuesta más que en Amazon?</summary>
+        <p>Porque ese oso es igual para todos. Este lleva su nombre, lo hago yo y sale de aquí, no de un almacén.</p>
+      </details>
+      <details>
+        <summary>¿Cuánto dura?</summary>
+        <p>Las rosas son de espuma y no se secan. <span data-cfg="COLOR_DURABILITY_TEXT">[FALTA DATO: cuánto aguanta el color]</span></p>
+      </details>
+      <details>
+        <summary>¿Es un juguete?</summary>
+        <p>No. Es un objeto decorativo; las rosas se pueden despegar, así que no es para niños pequeños.</p>
+      </details>
+      <details>
+        <summary>¿Lo puedo devolver?</summary>
+        <p>Si lleva un nombre hecho para ti, no tiene los 14 días de devolución. Si llega roto o con un fallo, te lo cambio o te devuelvo el dinero.</p>
+      </details>
+      <details>
+        <summary>¿Envías fuera de Padrón?</summary>
+        <p>Sí. Escríbeme y te digo el coste antes de confirmar nada.</p>
+      </details>
+    </section>
+
+    <p class="cierre">¿Dudas con el color o la frase? Escríbeme antes de pedir. Tú decides con calma.</p>
+  </main>
+
+  <footer class="pie">
+    <p class="marca" data-cfg="BRAND_NAME">[FALTA DATO: nombre de la marca]</p>
+    <nav aria-label="Información legal">
+      <a href="aviso-legal.html">Aviso legal</a>
+      <a href="privacidad.html">Privacidad</a>
+      <a href="condiciones.html">Condiciones</a>
+    </nav>
+    <p>Objeto decorativo. No es un juguete. Contiene piezas pequeñas: no apto para menores de 3 años. Fabricado a mano por <span data-cfg="SELLER_LEGAL_NAME">[FALTA DATO: nombre y apellidos de la titular]</span>, <span data-cfg="SELLER_EMAIL">[FALTA DATO: email de contacto]</span>.</p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
