@@ -13,8 +13,8 @@ Web de una sola página. Sin instalar nada: HTML, CSS y JavaScript.
 
 ## Cambiar la foto y el vídeo
 
-- Foto: guarda la foto real como `img/oso.jpg` (vertical 4:5, unos 1200 × 1500 px, menos de 300 KB).
-  En `index.html` cambia `img/foto-pendiente.svg` por `img/oso.jpg`.
+- Foto: guarda cada foto real como `img/oso-1.jpg`, `img/oso-2.jpg`… (vertical 4:5, 1200 × 1500 px, menos de 300 KB).
+  En `index.html` (sección «Osos que ya han salido de aquí») cambia cada `img/foto-pendiente.svg` por su foto.
 - Vídeo: guarda el vídeo como `img/proceso.mp4` (vertical 9:16, corto y comprimido).
   En `index.html` cambia la línea `<img class="video" …>` por:
   `<video class="video" src="img/proceso.mp4" controls playsinline preload="metadata"></video>`
@@ -25,3 +25,4 @@ Web de una sola página. Sin instalar nada: HTML, CSS y JavaScript.
 - Instagram: `https://TU-WEB/?src=ig`
 
 El mensaje de pedido dice de dónde viene cada cliente.
+- `formulario.html` es la versión sencilla, solo con el formulario.

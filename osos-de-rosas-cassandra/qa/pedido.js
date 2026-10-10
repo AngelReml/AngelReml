@@ -19,7 +19,7 @@ const BASE = "http://127.0.0.1:" + (process.env.PORT || 8787);
   // 2) Fecha anterior al mínimo
   const today = new Date(); const iso = d => d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
   const ayer = new Date(today.getFullYear(), today.getMonth(), today.getDate() - 1);
-  await page.check("#color-0", { force: true });
+  await page.click("label.muestra:has(#color-0)");
   await page.fill("#nombre", "Lucía");
   await page.fill("#fecha", iso(ayer));
   await page.click("#pedir");

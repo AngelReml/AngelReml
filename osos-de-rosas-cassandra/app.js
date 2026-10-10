@@ -247,7 +247,7 @@
 
     swatches.addEventListener("change", function (e) {
       var c = colors.filter(function (x) { return x.name === e.target.value; })[0];
-      if (c) bear.setAttribute("fill", c.hex);
+      if (c && bear) bear.setAttribute("fill", c.hex);
       setError("color", "");
     });
 

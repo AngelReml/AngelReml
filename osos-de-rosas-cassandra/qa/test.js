@@ -48,11 +48,11 @@ const out = (n) => path.join(__dirname, n);
       await page.fill("#nombre", "Ana\u0007\u0000 María");
       const v3 = await page.$eval("#nombre", i => i.value);
       check("quita caracteres de control", v3 === "Ana María", JSON.stringify(v3));
-      await page.check("#color-0", { force: true });
+      await page.click("label.muestra:has(#color-0)");
       await page.fill("#nombre", "Lucía");
       const ribbon = await page.$eval("#lazo-texto", t => t.textContent);
       check("lazo se actualiza", ribbon === "Lucía", JSON.stringify(ribbon));
-      await page.screenshot({ path: out("lazo-lucia-360.png"), fullPage: false, clip: await page.$eval(".vista", e => { const r = e.getBoundingClientRect(); return { x: r.x, y: r.y + window.scrollY, width: r.width, height: r.height }; }) }).catch(async () => { await page.locator(".vista").screenshot({ path: out("lazo-lucia-360.png") }); });
+      await page.screenshot({ path: out("lazo-lucia-360.png"), fullPage: false, clip: await page.$eval(".oso-vista", e => { const r = e.getBoundingClientRect(); return { x: r.x, y: r.y + window.scrollY, width: r.width, height: r.height }; }) }).catch(async () => { await page.locator(".oso-vista").screenshot({ path: out("lazo-lucia-360.png") }); });
       const falta = await page.$$eval(".falta", els => els.map(e => e.textContent.trim()));
       console.log("INFO  [FALTA DATO] visibles en index:", JSON.stringify([...new Set(falta)]));
     }
